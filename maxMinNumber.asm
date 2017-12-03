@@ -4,8 +4,8 @@ title maxMinNumber
  .data                         ; Data Segment
   t0 db 12,13,10,37,92,94,10   ; 12 -> t0, 13 -> t0+1, 10 -> t0+2 ...
 
-  count EQU ($-t0)             ; $ means Program Counter, its original value is 0,
-                               ; EQU means "equal to", make count equal to value ($-t0)
+  count EQU ($-t0)             ; $ means Program Counter, its original value is 0, current $=t0+3
+                               ; EQU means "equal to", make count equal to value ($-t0)=3
 
   max db -128                  ; -128 -> max, db means 8b
   min db 127                   ; 127 -> min, db means 8b
