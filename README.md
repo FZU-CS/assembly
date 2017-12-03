@@ -1,2 +1,0 @@
-# fzuASM
-fzuASM: Assembly Codes

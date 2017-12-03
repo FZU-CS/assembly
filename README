@@ -1,0 +1,11 @@
+abc: Assembly Basic Course, FZU, 2017 Fall.
+
+This repository maintains the basic assembly codes for learning assembly language, including:
+  * Add two integers;
+  * Judge the total number of negative number and positive number in a given array;
+  * Find the Max number and the Min number of a given array;
+  * Bubble sorting.
+
+Besides, there are also some experiment codes written in interface experiments, including: TBD.
+
+I DONOT provide any support for answering issues, however, the heavy comments on addTwoNumber.asm and maxMinNumber.asm could help you with your problems partly.
