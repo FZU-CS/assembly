@@ -43,28 +43,33 @@ ag:
    
    mov dx,pc
    in al,dx
+
    test al,10000000b
    jz ag
    
-   mov al,second
+   mov al,second     ; +1s
    add al,1
    DAA
    mov second,al
    
-   .IF second==60h
+   .IF second==60h   ; if 60s, return
    mov second,0
    .endif
+
 ag1:
    call led_8
    
    mov dx,pc   
    in al,dx
+   
    test al,10000000b
    jnz ag1
+   
    jmp ag
+
    mov ah,4ch
    int 21h
-   
+
 led_8 proc
    
    mov cl,04h

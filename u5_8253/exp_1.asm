@@ -41,7 +41,6 @@ start:
    
    mov al,10h         ; the initial value
    out dx,al          ; write initial value of counter0, lowB
-   
 
    
    mov dx,ctl_53

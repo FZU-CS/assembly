@@ -32,7 +32,7 @@ ag2:
    mov dx,pb         ; read PB0
    in al,dx
 
-   test al,00000001b ; if the value of al is 0, loop back
+   test al,00000001b ; if the value of al is not 0, loop back
    jnz ag2
 
    loop ag           ; go back to ag
