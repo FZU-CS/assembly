@@ -6,6 +6,9 @@ This repository maintains the basic assembly codes for learning assembly languag
   * Find the Max number and the Min number of a given array;
   * Bubble sorting.
 
-Besides, there are also some experiment codes written in interface experiments, including: TBD.
+Besides, there are also some experiment codes written in interface experiments, including: 
+  * Assembly codes which run on Intel 8253 Chip;
+  * Assembly codes which run on Intel 8255 Chip;
+  * Experiment codes which leverage both 8253 and 8255.
 
 I DONOT provide any support for answering issues, however, the heavy comments on addTwoNumber.asm and maxMinNumber.asm could help you with your problems partly.
