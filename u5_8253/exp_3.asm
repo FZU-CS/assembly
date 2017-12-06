@@ -6,16 +6,17 @@ ctl_53 equ 29Bh
 
 code segment
    assume cs:code
+   
 start:
    mov dx,ctl_53
-   mov al,00100111b
+   mov al,00100111b ; counter0, R/W highB, Mode3, BCD
    out dx,al
    mov dx,t0
    mov al,10h
    out dx,al
 
    mov dx,ctl_53
-   mov al,01100111b
+   mov al,01100111b ; counter1, R/W highB, Mode3, BCD
    out dx,al
    mov dx,t1
    mov al,10h

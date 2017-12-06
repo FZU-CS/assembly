@@ -9,10 +9,10 @@ code segment
    
 start:
    mov dx,ctl_53
-   mov al,10010000b
+   mov al,10010000b ; counter2, W/R lowB, Mode0, BIN
    out dx,al
    mov dx,t2
-   mov al,09h
+   mov al,09h       ; initial value
    out dx,al
    
    mov ah,4ch

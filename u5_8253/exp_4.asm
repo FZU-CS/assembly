@@ -9,17 +9,17 @@ code segment
 
 start:
    mov dx,ctl_53
-   mov al,01100101b
+   mov al,01100101b ; counter1, R/W highB, Mode2, BCD
    out dx,al
    mov dx,t1
-   mov al,40h
+   mov al,40h       ; 40h
    out dx,al  
    
    mov dx,ctl_53
-   mov al,10010101b
+   mov al,10010101b ; counter2, R/W lowB, Mode2, BCD
    out dx,al
    mov dx,t2
-   mov al,04h
+   mov al,04h       ; 04h
    out dx,al
    
    mov ah,4ch
