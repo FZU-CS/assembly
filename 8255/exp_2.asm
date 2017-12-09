@@ -62,7 +62,7 @@ ag2:
    test al,10000000b ; if the highest bit is not 1, go ag2
    jnz ag2
    
-   inc si            ; si--
+   inc si            ; si++
    loop ag
    jmp ag3
    
