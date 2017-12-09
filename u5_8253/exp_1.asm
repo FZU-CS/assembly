@@ -42,6 +42,13 @@ start:
    mov al,10h         ; the initial value, 10h = 1000, BCD
    out dx,al          ; write initial value of counter0, lowB
 
+   ; if choose binary case, i.e. 00 10 011 0
+   ; mov dx,to
+   ; mov ax,1000
+   ; out dx,al   ; lowb first
+   ; mov al,ah    
+   ; out dx,al
+
    
    mov dx,ctl_53
    mov al,01100101b
