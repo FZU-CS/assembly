@@ -39,7 +39,7 @@ start:
 
    mov dx,t0          ; dx(control register) = counter0 port
    
-   mov al,10h         ; the initial value
+   mov al,10h         ; the initial value, 10h = 1000, BCD
    out dx,al          ; write initial value of counter0, lowB
 
    
